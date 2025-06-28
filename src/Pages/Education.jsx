@@ -18,7 +18,7 @@ const Education = () => {
         {educationData.map((edu, index) => (
           <div
             key={index}
-            className="bg-gray-300 max-w-6xl mx-auto shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition"
+            className="bg-white max-w-6xl mx-auto shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition"
           >
             <h3 className="text-xl font-semibold text-blue-600">{edu.degree}</h3>
             <p className="text-gray-700">{edu.institution}</p>

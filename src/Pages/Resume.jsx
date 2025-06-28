@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div className="min-h-screen bg-gray-300 px-4 pt-24 pb-10 text-gray-800">
+    <div className="min-h-screen bg-white px-4 pt-24 pb-10 text-gray-800">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-green-600 mb-6">Md Harun</h1>
         <p className="text-center mb-2">

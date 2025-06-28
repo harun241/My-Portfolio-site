@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router';
 import Logo from './Logo';
 const Navbar = () => {
   return (
-   <div className="navbar bg-base-100 shadow-sm">
+   <div className="fixed top-0 left-0 right-0 bg-gray-800 h-16 shadow-sm flex items-center px-4 z-50 w-11/12 mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,7 +16,7 @@ const Navbar = () => {
              <NavLink
                to="/"
                className={({ isActive }) =>
-                 isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400'
+                 isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400 text-green-600'
                }
              >
                Home
@@ -26,7 +26,7 @@ const Navbar = () => {
         <NavLink
           to="/service"
           className={({ isActive }) =>
-            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400'
+            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400 text-green-600'
           }
         >
           Service
@@ -36,7 +36,7 @@ const Navbar = () => {
         <NavLink
           to="/resume"
           className={({ isActive }) =>
-            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400'
+            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400 text-green-600'
           }
         >
           Resume
@@ -52,7 +52,7 @@ const Navbar = () => {
              <NavLink
                to="/"
                className={({ isActive }) =>
-                 isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400'
+                 isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400 text-green-600'
                }
              >
                Home
@@ -62,7 +62,7 @@ const Navbar = () => {
         <NavLink
           to="/service"
           className={({ isActive }) =>
-            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400'
+            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400 text-green-600'
           }
         >
           Service
@@ -72,7 +72,7 @@ const Navbar = () => {
         <NavLink
           to="/resume"
           className={({ isActive }) =>
-            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400'
+            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400 text-green-600'
           }
         >
           Resume

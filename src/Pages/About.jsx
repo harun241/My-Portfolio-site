@@ -7,7 +7,7 @@ const About = () => {
         <h2 className="text-4xl font-bold text-green-600 mb-6">
           About Me
         </h2>
-        <div className="bg-gray-300">
+        <div className="bg-white">
           <p className="text-lg  leading-relaxed">
           Hi! I’m <span className="font-semibold">MD Harun</span> — a passionate and
           detail-oriented <span className="text-blue-600 font-semibold">MERN Stack Developer</span> with a strong focus on building dynamic,
