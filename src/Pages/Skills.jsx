@@ -3,11 +3,11 @@ import React from 'react';
 const Skills = () => {
   return (
     <div className="my-20 bg-gray-800 py-10 px-4">
-      <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
+      <h1 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-green-600 mb-6">
         My Skills
       </h1>
 
-      <h4 className="text-white text-lg sm:text-xl mb-4 text-center">
+      <h4 className=" text-lg sm:text-xl mb-4 text-center text-green-600">
         🛠️ Tech Stack
       </h4>
 

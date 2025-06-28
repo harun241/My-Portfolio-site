@@ -20,7 +20,7 @@ const Education = () => {
             key={index}
             className="bg-white max-w-6xl mx-auto shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition"
           >
-            <h3 className="text-xl font-semibold text-blue-600">{edu.degree}</h3>
+            <h3 className="text-xl font-semibold text-green-600">{edu.degree}</h3>
             <p className="text-gray-700">{edu.institution}</p>
             <p className="text-gray-700">{edu.year}</p>
              <p className="text-gray-700">Expected Year OF Finishing- 2026</p>
