@@ -6,11 +6,7 @@ const Logo = () => {
         MH
       </div>
 
-      {/* Text Part */}
-      <div className="text-white leading-tight">
-        <h1 className="text-lg font-bold tracking-wide"> Harun</h1>
-        
-      </div>
+     
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+// ✅ Project images
 import project1 from "../assets/hotel1.jpg";
 import project2 from "../assets/Garden-2.jpg";
 import project3 from "../assets/Garden3.jpg";
@@ -12,12 +13,12 @@ import project7 from "../assets/job3.jpg";
 import project8 from "../assets/job2.jpg";
 import project9 from "../assets/job1.jpg";
 
-// ✅ ProjectCard Component
+// ✅ Single Project Card Component
 const ProjectCard = ({ title, description, tech, liveLink, images, client, server }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-6 bg-gray-300 shadow-md rounded-xl overflow-hidden mb-10 hover:shadow-lg transition duration-300 max-w-7xl">
-      {/* Left: Text */}
-      <div className="md:w-1/2 p-6">
+    <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6 bg-white shadow-md rounded-xl overflow-hidden mb-12 px-4 py-6 hover:shadow-lg transition duration-300">
+      {/* Left Section: Text */}
+      <div className="w-full lg:w-1/2">
         <h2 className="text-2xl font-bold text-green-600">{title}</h2>
         <p className="text-gray-700 mt-3">{description}</p>
         <p className="mt-4 text-sm text-gray-600">
@@ -58,8 +59,8 @@ const ProjectCard = ({ title, description, tech, liveLink, images, client, serve
         </div>
       </div>
 
-      {/* Right: Carousel */}
-      <div className="md:w-1/2 p-4">
+      {/* Right Section: Carousel */}
+      <div className="w-full lg:w-1/2">
         <Carousel
           showThumbs={false}
           autoPlay
@@ -72,7 +73,7 @@ const ProjectCard = ({ title, description, tech, liveLink, images, client, serve
               <img
                 src={img}
                 alt={`project image ${idx + 1}`}
-                className="rounded-xl h-80 object-cover"
+                className="rounded-xl w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[320px] object-cover"
               />
             </div>
           ))}
@@ -109,7 +110,7 @@ const Projects = () => {
       title: "Job Tracking Website",
       description:
         "A job tracking and management platform with features like job posting, application tracking, user authentication, role-based access, and real-time status updates.",
-      tech: "React, Firebase,  Tailwind",
+      tech: "React, Firebase, Tailwind",
       liveLink: "https://authentication-18340.web.app/",
       client: "https://github.com/harun241/jobtrack.git",
       images: [project7, project8, project9],
@@ -117,8 +118,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 bg-gray-800">
-      <h1 className="text-3xl font-bold text-center my-20 text-green-600">My Projects</h1>
+    <div className="bg-gray-800 py-16 px-4">
+      <h1 className="text-4xl font-bold text-center mb-16 text-green-500">My Projects</h1>
       {projectData.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
