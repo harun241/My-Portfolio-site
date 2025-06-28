@@ -30,11 +30,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen pt-24 px-4 bg-gray-50 text-gray-800">
+    <div className="min-h-screen pt-24 px-4 bg-gray-300 text-gray-800 ">
       <div className="max-w-xl mx-auto p-6 bg-white shadow rounded-lg">
-        <h2 className="text-3xl font-bold mb-6 text-center text-green-600">Contact Me</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center text-green-600">Hire Me</h2>
 
-        <form ref={form} onSubmit={sendEmail} className="space-y-4">
+        <form ref={form} onSubmit={sendEmail} className="space-y-4 ">
           {/* Your Email (Readonly) */}
           <div>
             <label className="block font-semibold mb-1">To</label>

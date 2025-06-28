@@ -2,14 +2,13 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div className="min-h-screen bg-white px-4 pt-24 pb-10 text-gray-800">
+    <div className="min-h-screen bg-gray-300 px-4 pt-24 pb-10 text-gray-800">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-green-600 mb-6">Md Harun</h1>
         <p className="text-center mb-2">
-          📍 Dhaka, Bangladesh | 📧 <a href="mailto:harun@example.com" className="text-blue-600">harun@example.com</a> | 📱 +8801820903961
+          📍 Dhaka, Bangladesh  | 📱 +8801820903961
         </p>
         <p className="text-center mb-4">
-          🌐 <a href="https://portfolio.com" target="_blank" rel="noreferrer" className="text-blue-600">portfolio.com</a> |
           💼 <a href="https://github.com/harun241" target="_blank" rel="noreferrer" className="text-blue-600">GitHub</a> |
           🔗 <a href="https://www.linkedin.com/in/md-harun-or-rashid-409aaa363/" target="_blank" rel="noreferrer" className="text-blue-600">LinkedIn</a>
         </p>
@@ -82,14 +81,7 @@ const Resume = () => {
         </section>
 
         {/* Achievements */}
-        <section className="mb-6">
-          <h2 className="text-xl font-semibold mb-2">🏆 Achievements</h2>
-          <ul className="list-disc ml-6">
-            <li>1st Place – Portfolio Design Challenge (University)</li>
-            <li>Completed 20+ Frontend,full-stack Practice-Project with auth, CRUD, and UI libraries</li>
-          </ul>
-        </section>
-
+        
         {/* Languages */}
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-2">💬 Languages</h2>

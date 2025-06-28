@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import Logo from './Logo';
 
 const Navbar = () => {
@@ -36,14 +36,7 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive ? 'border-b-2 border-green-500' : 'hover:border-b hover:border-gray-400'
-          }
-        >
-          Contact
-        </NavLink>
+        
       </li>
     </>
   );
@@ -72,7 +65,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="ml-1">
-        <button className="btn btn-success rounded-full h-6">Hire Me</button>
+       <Link to={'/contact'}> <button className="btn btn-success rounded-full h-6">Hire Me</button></Link>
       </div>
     </div>
   );

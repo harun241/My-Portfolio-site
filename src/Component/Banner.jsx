@@ -22,7 +22,7 @@ const Banner = () => {
       "Hi, I'm a passionate Web Developer creating modern, responsive, <br /> and user-friendly websites. Let's build something amazing together!"
       </p>
     <div className='flex items-center gap-4 '>
-         <div className="btn btn-outline btn-success space-x-2 mt-4 "> <button className='flex "' >Download CV <MdDownload /></button>
+         <div className="btn btn-outline btn-success space-x-2 mt-4 "> <a href=""><button className='flex "' >Download CV <MdDownload /></button></a>
      </div>
    <div className='flex space-x-4 mt-4'>
   <a
