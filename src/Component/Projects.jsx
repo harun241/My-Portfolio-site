@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-// ✅ Project images
+// Project images
 import project1 from "../assets/hotel1.jpg";
 import project2 from "../assets/Garden-2.jpg";
 import project3 from "../assets/Garden3.jpg";
@@ -13,18 +14,30 @@ import project7 from "../assets/job3.jpg";
 import project8 from "../assets/job2.jpg";
 import project9 from "../assets/job1.jpg";
 
-// ✅ Single Project Card Component
-const ProjectCard = ({ title, description, tech, liveLink, images, client, server }) => {
+// Project Card
+const ProjectCard = ({ title, description, tech, liveLink, images, client, server, index }) => {
   return (
-    <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6 bg-white shadow-md rounded-xl overflow-hidden mb-12 px-4 py-6 hover:shadow-lg transition duration-300">
-      {/* Left Section: Text */}
+    <motion.div
+      className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6 
+                 bg-gray-800 shadow-lg rounded-2xl overflow-hidden mb-12 px-6 py-6
+                 transition-all duration-500"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: index * 0.2 }}
+      whileHover={{
+        scale: 1.05,
+        backgroundColor: "#1f2937", // slightly lighter gray
+        boxShadow: "0 10px 30px rgba(72, 255, 0, 0.6), 0 0 60px rgba(72, 255, 0, 0.3)",
+      }}
+    >
+      {/* Text */}
       <div className="w-full lg:w-1/2">
-        <h2 className="text-2xl font-bold text-green-600">{title}</h2>
-        <p className="text-gray-700 mt-3">{description}</p>
-        <p className="mt-4 text-sm text-gray-600">
+        <h2 className="text-2xl font-bold text-green-500 mb-2">{title}</h2>
+        <p className="text-gray-200">{description}</p>
+        <p className="mt-3 text-sm text-gray-400">
           <span className="font-semibold">Tech Stack:</span> {tech}
         </p>
-
         <div className="flex flex-wrap gap-3 mt-4">
           {liveLink && (
             <a
@@ -59,7 +72,7 @@ const ProjectCard = ({ title, description, tech, liveLink, images, client, serve
         </div>
       </div>
 
-      {/* Right Section: Carousel */}
+      {/* Carousel */}
       <div className="w-full lg:w-1/2">
         <Carousel
           showThumbs={false}
@@ -79,11 +92,11 @@ const ProjectCard = ({ title, description, tech, liveLink, images, client, serve
           ))}
         </Carousel>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-// ✅ Main Projects Component
+// Main Projects Component
 const Projects = () => {
   const projectData = [
     {
@@ -118,10 +131,12 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-gray-800 py-16 px-4">
-      <h1 className="text-4xl font-bold text-center mb-16 text-green-500">My Projects</h1>
+    <div className="bg-gray-900 py-16 px-4">
+      <h1 className="text-4xl font-bold text-center mb-16 text-green-500">
+        My Projects
+      </h1>
       {projectData.map((project, index) => (
-        <ProjectCard key={index} {...project} />
+        <ProjectCard key={index} {...project} index={index} />
       ))}
     </div>
   );
