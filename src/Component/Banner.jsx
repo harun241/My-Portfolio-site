@@ -105,7 +105,7 @@ const Banner = () => {
             transition={{ duration: 1.2 }}
           >
             <a
-              href="https://drive.google.com/file/d/12SLmA07P4VQ69ZJcxbOUx12a6LJcDRBX/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1SmrRoQDmy7L0qtF5PcDtlnq-fdGF74hj/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline btn-success flex items-center gap-2 transition-transform transform hover:scale-105 hover:shadow-lg"

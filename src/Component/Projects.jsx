@@ -100,13 +100,12 @@ const ProjectCard = ({ title, description, tech, liveLink, images, client, serve
 const Projects = () => {
   const projectData = [
     {
-      title: "Hotel Booking Platform",
+      title: "Safe-pay:Ai-powerd Fraud Transaction Detection system",
       description:
         "A full-stack hotel booking app with authentication, booking, review system, and admin control panel.",
-      tech: "React, Node.js, Express, MongoDB, JWT, Tailwind",
-      liveLink: "https://hotel-management-5b87e.web.app",
-      client: "https://github.com/harun241/hotel-management.git",
-      server: "https://github.com/harun241/hotel-management-server.git",
+      tech: "Next-js,MongoDB, Firebase, MongoDB, JWT, Tailwind",
+      liveLink: "https://safe-pay-seven.vercel.app",
+      client:"https://github.com/harun241/Safe-pay.git",
       images: [project1, project5, project6],
     },
     {
@@ -120,12 +119,13 @@ const Projects = () => {
       images: [project2, project3, project4],
     },
     {
-      title: "Job Tracking Website",
+      title: "Educational-content-Management-platform",
       description:
-        "A job tracking and management platform with features like job posting, application tracking, user authentication, role-based access, and real-time status updates.",
-      tech: "React, Firebase, Tailwind",
-      liveLink: "https://authentication-18340.web.app/",
-      client: "https://github.com/harun241/jobtrack.git",
+        "Learn better with EduQuest ,Your all-in-one solution for classes, assignments, and progress tracking..",
+      tech: "firebase,React, Tailwind CSS, Node.js, Express.js, MongoDB, TanStack Query",
+      liveLink: "https://edumanage-d78f1.web.app",
+      client: "https://github.com/harun241/edumanage-client.git",
+      server:"https://github.com/harun241/edumanage-server.git",
       images: [project7, project8, project9],
     },
   ];

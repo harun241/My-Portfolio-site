@@ -11,8 +11,9 @@ const HomePage = () => {
             <Banner></Banner>
             <About></About>
             <Skills></Skills>
-            <Education></Education>
+            
             <Projects></Projects>
+            <Education></Education>
         </div>
     );
 };
